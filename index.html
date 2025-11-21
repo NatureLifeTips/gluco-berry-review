@@ -78,7 +78,7 @@
             box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
         }
         
-        /* Primary Button (Video) */
+        /* Primary Button (Video) - Green */
         .btn-primary {
             background: linear-gradient(to bottom, #10b981, #059669);
             color: white;
@@ -92,15 +92,17 @@
             filter: brightness(110%);
         }
 
-        /* Secondary Button (Text) */
+        /* Secondary Button (Text) - Yellow & Red (High Contrast) */
         .btn-secondary {
-            background-color: #f3f4f6;
-            color: #374151;
-            border: 1px solid #d1d5db;
-            font-size: 16px;
+            background-color: #ffd54f; /* Yellow background */
+            color: #c62828; /* Red text */
+            border: 2px solid #c62828; /* Red border */
+            font-size: 21px; /* Larger font */
+            font-weight: 800; /* Extra Bold */
         }
         .btn-secondary:hover {
-            background-color: #e5e7eb;
+            background-color: #ffca28;
+            color: #b71c1c;
         }
 
         .or-divider {
@@ -112,15 +114,19 @@
             letter-spacing: 1px;
         }
 
-        /* Footer */
+        /* Updated Footer - Clean & Compliant */
         .footer {
-            font-size: 11px;
+            font-size: 12px;
             text-align: center;
-            color: #9ca3af;
-            margin-top: 50px;
+            color: #6b7280;
+            margin-top: 40px;
             border-top: 1px solid #f3f4f6;
-            padding-top: 15px;
+            padding-top: 20px;
             line-height: 1.5;
+        }
+        .footer a {
+            color: #6b7280;
+            text-decoration: none;
         }
 
         @keyframes pulse {
@@ -163,10 +169,19 @@
     </a>
 
     <div class="footer">
-        <p><strong>Disclaimer:</strong> This site is not a part of the Google website or Google Inc. Additionally, This site is NOT endorsed by Google in any way.</p>
-        <p>The content provided here is for informational purposes only and does not constitute medical advice. Always consult with a healthcare professional before starting any new diet or supplement.</p>
-        <p>Disclosure: We are a professional review site that receives compensation from the companies whose products we review.</p>
-        <p>&copy; 2024 Daily Health Digest. All Rights Reserved.</p>
+        <p>&copy; 2025 Daily Health Digest. All Rights Reserved.</p>
+        
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Use</a> | 
+            <a href="#">Contact</a>
+        </p>
+
+        <p style="font-style: italic; opacity: 0.8; font-size: 11px; margin-top: 15px;">
+            <strong>Disclaimer:</strong> The information provided on this site is for educational purposes only and is not intended as medical advice. Always consult with a physician before starting any new supplement. 
+            <br><br>
+            <strong>FTC Disclosure:</strong> This page contains affiliate links. If you choose to make a purchase after clicking a link, we may receive a commission at no additional cost to you.
+        </p>
     </div>
 </div>
 
