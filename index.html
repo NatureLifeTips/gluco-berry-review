@@ -1,137 +1,172 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phương pháp mới hỗ trợ đường huyết</title>
+    <title>The "Kidney Drain" Discovery</title>
+    <meta name="description" content="New scientific discovery regarding blood sugar management.">
     <style>
-        /* Cấu trúc cơ bản gọn nhẹ, tải cực nhanh */
+        /* Mobile-First Design Framework */
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #1c1e21;
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
         .container {
-            max-width: 600px; /* Tối ưu cho giao diện điện thoại giống TikTok/Insta */
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            min-height: 100vh;
+            max-width: 550px; /* Optimized for mobile reading flow */
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            min-height: 90vh;
         }
+        /* Typography */
         h1 {
-            color: #d0021b; /* Màu đỏ thu hút sự chú ý */
-            font-size: 26px;
+            color: #b91c1c; /* Dark Red for Urgency */
+            font-size: 28px;
             text-align: center;
-            margin-bottom: 10px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            font-weight: 800;
         }
         .sub-headline {
             text-align: center;
-            font-style: italic;
-            color: #555;
+            font-size: 18px;
+            color: #4b5563;
             margin-bottom: 25px;
+            font-weight: 500;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 20px;
         }
-        .image-placeholder {
+        .bold-text {
+            font-weight: bold;
+            color: #000;
+        }
+        .highlight {
+            background-color: #fef08a; /* Soft yellow highlight */
+            padding: 0 4px;
+        }
+        
+        /* Image Styling */
+        .hero-image {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: block;
         }
-        .highlight {
-            background-color: #ffffcc;
-            padding: 2px 5px;
-            font-weight: bold;
-        }
+
+        /* Button Styling */
         .btn {
             display: block;
             width: 100%;
-            padding: 15px 0;
-            margin: 20px 0;
+            padding: 18px 10px;
+            margin: 15px 0;
             text-align: center;
             text-decoration: none;
             font-size: 20px;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: all 0.2s ease;
             box-sizing: border-box;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
         }
-        /* Nút chính - Dẫn về Video (VSL) */
+        
+        /* Primary Button (Video) */
         .btn-primary {
-            background-color: #2ecc71;
+            background: linear-gradient(to bottom, #10b981, #059669);
             color: white;
-            border-bottom: 4px solid #27ae60;
+            border: 1px solid #047857;
+            text-transform: uppercase;
             animation: pulse 2s infinite;
         }
         .btn-primary:hover {
-            background-color: #27ae60;
+            transform: translateY(-1px);
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+            filter: brightness(110%);
         }
-        /* Nút phụ - Dẫn về trang đọc (TSL) */
+
+        /* Secondary Button (Text) */
         .btn-secondary {
-            background-color: #3498db;
-            color: white;
-            border-bottom: 4px solid #2980b9;
+            background-color: #f3f4f6;
+            color: #374151;
+            border: 1px solid #d1d5db;
             font-size: 16px;
         }
-        .footer {
-            font-size: 10px;
-            text-align: center;
-            color: #999;
-            margin-top: 40px;
-            border-top: 1px solid #eee;
-            padding-top: 10px;
+        .btn-secondary:hover {
+            background-color: #e5e7eb;
         }
-        
-        /* Hiệu ứng nút đập nhẹ để kêu gọi click */
+
+        .or-divider {
+            text-align: center;
+            margin: 15px 0;
+            color: #9ca3af;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        .footer {
+            font-size: 11px;
+            text-align: center;
+            color: #9ca3af;
+            margin-top: 50px;
+            border-top: 1px solid #f3f4f6;
+            padding-top: 15px;
+            line-height: 1.5;
+        }
+
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-            100% { transform: scale(1); }
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Bạn có đang gặp rắc rối với Chỉ Số Đường Huyết dù đã kiêng khem?</h1>
+    <h1>Top Scientists Reveal: The Real Reason Your Blood Sugar Is "Stuck"</h1>
     
-    <p class="sub-headline">Khám phá "Nghi thức buổi sáng" đơn giản với loại quả màu tím giúp hàng ngàn người ổn định sức khỏe.</p>
+    <p class="sub-headline">It's not your diet. It's not your genetics. It's a microscopic "drain" in your kidneys.</p>
 
-    <div class="image-placeholder">
-        <img src="https://placehold.co/600x350/800080/ffffff?text=Purple+Berry+Secret" alt="Bí mật quả mọng tím" style="width:100%; border-radius:8px;">
-    </div>
+    <img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="The Purple Berry Secret" class="hero-image">
 
-    <p>Các nhà khoa học tại Đại học Johns Hopkins vừa phát hiện ra một "Công tắc" bí ẩn trong thận...</p>
+    <p>If you've been struggling to manage your levels despite cutting carbs and exercising, <strong>it is not your fault.</strong></p>
     
-    <p>Nó không liên quan đến insulin hay lượng đường bạn ăn vào.</p>
+    <p>A new breakthrough from <span class="bold-text">Johns Hopkins University</span> has identified a sticky gray protein that clogs up your kidney's natural filtration system.</p>
 
-    <p>Họ gọi nó là <span class="highlight">"Blood Sugar Drain" (Cống thoát đường huyết)</span>.</p>
+    <p>Scientists call this the <span class="highlight">"Blood Sugar Drain."</span></p>
     
-    <p>Khi cái "cống" này hoạt động tốt, nó sẽ xả lượng đường dư thừa ra khỏi cơ thể bạn một cách tự nhiên. Nhưng khi nó bị tắc nghẽn bởi một loại protein dính màu xám, đường sẽ bị kẹt lại trong máu.</p>
+    <p>When this drain is working, it flushes excess sugar out of your body effortlessly. But when it's clogged... that sugar gets trapped in your bloodstream.</p>
 
-    <p>May mắn thay, có một loại <strong>quả mọng màu tím</strong> độc đáo có thể giúp thông tắc nó.</p>
+    <p>The good news? There is a unique <strong>"Purple Berry"</strong> found in the rainforests of Chile that is proven to unclog this drain and reactivate your body's natural flushing mechanism.</p>
 
-    <h3>Hãy chọn cách bạn muốn xem thông tin này:</h3>
+    <p style="text-align: center; font-weight: 500; margin-top: 30px;">Select how you want to learn about this solution:</p>
 
     <a href="https://hop.clickbank.net/?affiliate=advisor91&vendor=glucoberry&v=bvsl&tid=LANDING_BTN1" class="btn btn-primary">
-        ▶ XEM VIDEO GIẢI THÍCH NGAY
-        <br><span style="font-size:14px; font-weight:normal;">(Khuyên dùng: Video ngắn gọn & dễ hiểu)</span>
+        ▶ Watch The Explainer Video
+        <br><span style="font-size:12px; font-weight:normal; text-transform:none; opacity: 0.9;">(Recommended: Visual & Fast)</span>
     </a>
 
-    <p style="text-align:center;">Hoặc</p>
+    <div class="or-divider">Or</div>
 
     <a href="https://hop.clickbank.net/?affiliate=advisor91&vendor=glucoberry&v=tsl&tid=LANDING_BTN2" class="btn btn-secondary">
-        📄 Đọc báo cáo dạng văn bản
+        📄 Read the Text Report
     </a>
 
     <div class="footer">
-        <p>Trang web này không thuộc về Google, Facebook hay TikTok. <br>
-        Đây là trang tiếp thị liên kết quảng bá sản phẩm GlucoBerry.</p>
-        <p>Disclaimer: Nội dung chỉ mang tính chất tham khảo, không thay thế lời khuyên y tế.</p>
-        <p>&copy; 2024 HealthyLiving.</p>
+        <p><strong>Disclaimer:</strong> This site is not a part of the Google website or Google Inc. Additionally, This site is NOT endorsed by Google in any way.</p>
+        <p>The content provided here is for informational purposes only and does not constitute medical advice. Always consult with a healthcare professional before starting any new diet or supplement.</p>
+        <p>Disclosure: We are a professional review site that receives compensation from the companies whose products we review.</p>
+        <p>&copy; 2024 Daily Health Digest. All Rights Reserved.</p>
     </div>
 </div>
 
